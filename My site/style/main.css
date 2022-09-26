@@ -1,0 +1,89 @@
+body,html {
+    padding: 0;
+    margin: 0;
+}
+
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+#page-wrapper {
+    position: relative;
+    z-index: 2;
+    background-color: rgb(79, 79, 79, 0.8);
+    width: 65%;
+    margin: 0 auto;
+    padding: 25px;
+    min-height: 950px;
+    opacity: 70;
+    border-left: 10px solid hsla(200,13%,17%, 0.5);
+    border-right: 10px solid hsla(200,13%,17%, 0.5);
+    border-width: 10px solid hsla(200,13%,17%, 0.5);
+    border-top: 10px solid hsla(200,13%,17%, 0.5);
+    border-radius: 100px
+}
+
+body {
+	position: relative;
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 16px;
+	line-height: 1.4;
+	color: #000;
+	min-width: 320px;
+	overflow-x: hidden;
+	height: auto;
+}
+
+.information{
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+.title{
+    width: 35ch;
+    color: #33FFFF;
+    font-family: monospace;
+    font-size: 40px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid #CCCCCC;
+    animation: flashing-border 0.75s step-end infinite,
+    printed-text 5s steps(35);
+}
+
+@keyframes flashing-border{
+    0%{
+        border-color: #99FF99;
+    }
+    50%{
+        border-color: transparent;
+    }
+    100%{
+        border-color: #99FF99;
+    }
+}
+
+@keyframes printed-text{
+    from{
+        width: 0;
+    }
+}
+
+.information_1{
+    color: #CCCCCC;
+}
+
+hr {
+    display: block;
+    margin-top: 0.em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+} 

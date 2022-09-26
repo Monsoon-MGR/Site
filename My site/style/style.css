@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+#particles-js{
+    height: 100vh;
+    background-color:  #27272b;
+}
+
+body{
+    min-width: 1170px;
+}
